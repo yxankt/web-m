@@ -8,16 +8,29 @@
    
 </head>
 <body>
-    <div class="header">
-        <img src="logo_rmutsb_transparent.gif" width=50px height=100px  alt="University Logo">
-        <h1>มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ<br>Rajamangala University of Technology Suvarnabhumi</h1>
-    </div>
+   
     
-    <div class="container ">
-        <button class="move-button " >เลื่อนรูปภาพ</button>
-        <img src="" alt="Image" class="image" id="image">
+    <div class="banner">
+        <img src="logo_rmutsb_transparent.gif" alt="University Logo">
+        <div class="banner-text">
+            <div class="banner-title">มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ</div>
+            <div class="banner-subtitle">Rajamangala University of Technology Suvarnabhumi</div>
         </div>
     </div>
+
+
+
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="https://via.placeholder.com/600x400" alt="Slide 1"></div>
+            <div class="slide"><img src="https://via.placeholder.com/600x400/aaa" alt="Slide 2"></div>
+            <div class="slide"><img src="https://via.placeholder.com/600x400/333" alt="Slide 3"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div> 
+   
     <div class="navbar">
         <div class="input-container">
             <div class="input-group">
@@ -32,9 +45,9 @@
         <div class="input-group">
         <button class="login-btn">Login</button>
         <button class="register-btn">Register</button>
-            </div>
-            <div class="forgot-password"><u>Forgot password</u></div>
-              </div>
+        <div class="forgot-password"><u>Forgot password</u></div>
+        </div>
+        </div>
         
     </div>
 

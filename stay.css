@@ -7,23 +7,6 @@ body {
     height: 2000px ;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4a100;
-}
-
-.header img {
-    height: 80px;
-    margin-right: 20px;
-}
-
-.header h1 {
-    font-size: 24px;
-    margin: 0;
-    color: black;
-}
 
 .container {
     width: 700px;
@@ -104,4 +87,78 @@ body {
 .content {
     padding: 20px;
     /* Removed margin-top */
+}
+
+.slider-container {
+    margin-left :800px;
+    margin-top  :70px;
+    position: relative;
+    width: 700px;
+    height: 500px ;
+    
+    overflow: hidden;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f4a100;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+.banner img {
+    height: 100px;
+    margin-right: 20px;
+}
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.banner-subtitle {
+    font-size: 16px;
 }
