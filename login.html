@@ -31,22 +31,34 @@
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div> 
    
-    <div class="navbar1">
-        <div class="input-container">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Username...">
+    <div class="navbar">
+      
+        <div class="dropdown">
+            <button class="dropdown-btn">นักศึกษา ⌵</button>
+            <div class="dropdown-content">
+                <a href="#">ข้อมูลนักศึกษา</a>
+                <a href="#">ผลการเรียน</a>
+                <a href="#">โปรไฟล์</a>
             </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="********">
-            
         </div>
-        <div class="input-group">
-        <button class="login-btn">Login</button>
-        <button class="register-btn">Register</button>
-        <div class="forgot-password"><u>Forgot password</u></div>
+    
+        <div class="dropdown">
+            <button class="dropdown-btn">ลงทะเบียนกิจกรรม ⌵</button>
+            <div class="dropdown-content">
+                <a href="#">กิจกรรมปัจจุบัน</a>
+                <a href="#">ประวัติกิจกรรม</a>
+                <a href="#">สมัครใหม่</a>
+            </div>
         </div>
+     
+        
+        <div class="input-container " >
+           
+                <img src="user-icon.png" alt="User Icon">
+                <span>นาย........</span>
+                <div class="status "></div>
+                <span>นักศึกษา</span>
+                <button class="login-btn">Logout</button>
         </div>
         
     </div>
